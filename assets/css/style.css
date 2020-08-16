@@ -1,0 +1,50 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#pos_nav{
+	position: fixed;
+	margin-top: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+#main_section{
+	/*margin-top: 60%;	*/
+	height: auto;
+	/*min-height: 200px;*/
+	border-right: 1px solid #bab3b3;
+	border-left: 1px solid #bab3b3;
+}
+
+.list-group-item{
+	cursor: pointer;
+	perspective: 100px;
+
+}
+
+.list-group-item:hover {
+	background-color: #ccc;
+}
+
+.drop_menu{
+	display: block !important;
+}
+
+hr {
+	/*background-color: #bab3b3;*/
+}
+
+.info{
+	float: right;
+}
+
+#main_header {
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+
+

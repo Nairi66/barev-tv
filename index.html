@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 
 </head>
 <body>
@@ -50,76 +51,32 @@
 	  </div>
 	</nav>
 
-	<div class="slider">
-  <input name="control" id="page1" type="radio" checked/>
-  <!-- <input name="control" id="page2" type="radio"/> -->
-  <!-- <input name="control" id="page3" type="radio"/> -->
-  <!-- <input name="control" id="page4" type="radio"/> -->
-  <div class="slider--el slider--el-1 anim-4parts">
-    <div class="slider--el-bg">
-      <div class="part top left"></div>
-      <div class="part top right"></div>
-      <div class="part bot left"></div>
-      <div class="part bot right"></div>
-    </div>
-    <div class="slider--el-content">
-      <h2 class="slider--el-heading">Առաջին</h2>
-    </div>
-  </div>
-  <div class="slider--el slider--el-2 anim-9parts">
-    <div class="slider--el-bg">
-      <div class="part left-top"></div>
-      <div class="part mid-top"></div>
-      <div class="part right-top"></div>
-      <div class="part left-mid"></div>
-      <div class="part mid-mid"></div>
-      <div class="part right-mid"></div>
-      <div class="part left-bot"></div>
-      <div class="part mid-bot"></div>
-      <div class="part right-bot"></div>
-    </div>
-    <div class="slider--el-content">
-      <h2 class="slider--el-heading">Second slide</h2>
-    </div>
-  </div>
-  <div class="slider--el slider--el-3 anim-5parts">
-    <div class="slider--el-bg">
-      <div class="part part-1"></div>
-      <div class="part part-2"></div>
-      <div class="part part-3"></div>
-      <div class="part part-4"></div>
-      <div class="part part-5"></div>
-    </div>
-    <div class="slider--el-content">
-      <h2 class="slider--el-heading">Third slide</h2>
-    </div>
-  </div>
-  <div class="slider--el slider--el-4 anim-3parts">
-    <div class="slider--el-bg">
-      <div class="part left"></div>
-      <div class="part mid"></div>
-      <div class="part right"></div>
-    </div>
-    <div class="slider--el-content">
-      <h2 class="slider--el-heading">Fourth slide</h2>
-    </div>
-  </div>
-  <div class="slider--control left">
-    <label class="page1-left" for="page1"></label>
-    <label class="page2-left" for="page2"></label>
-    <label class="page3-left" for="page3"></label>
-    <label class="page4-left" for="page4"></label>
-  </div>
-  <div class="slider--control right">
-    <label class="page1-right" for="page1"></label>
-    <label class="page2-right" for="page2"></label>
-    <label class="page3-right" for="page3"></label>
-    <label class="page4-right" for="page4"></label>
-  </div>
+	<!-- title -->
+<div class="slider">
+  <!-- slide -->
+  <ul>
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <ol>
+    <!-- point -->
+    <li class="active"><i class="fa fa-circle-o"></i></li>
+    <li><i class="fa fa-circle-o"></i></li>
+    <li><i class="fa fa-circle-o"></i></li>
+    <li><i class="fa fa-circle-o"></i></li>
+    <li><i class="fa fa-circle-o"></i></li>
+    <!-- playpause -->
+    <i class="fa playpause fa-pause-circle-o" title="pause"></i>
+  </ol>
+  <!-- controll -->
+  <span class="controll active"></span>
+  <span class="controll"></span>
 </div>
 
-
-	<section class="container" id="main_section">
+	<!-- <section class="container" id="main_section">
 		<hr>
 		<ul class="list-group">
 		  <li class="list-group-item" category='anime'>Նարուտո
@@ -139,8 +96,10 @@
 		</ul>
 		<hr>
 
-	</section>
+	</section> -->
 	<script type="text/javascript" src="assets/js/slider.js"></script>
 	<script type="text/javascript" src="assets/js/js.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
 </body>
 </html>

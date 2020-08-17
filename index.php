@@ -9,16 +9,16 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/css/slider.css">
 	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-
+	<meta charset="utf-8">
 </head>
 <body>
 	<header id="main_header">
-		<div class="w3layouts_logo">
-			<a style="text-decoration: none;" href="index.html"><h1>Barev<span>FILMS</span></h1></a>
-		</div>
+		<a style="text-decoration: none;" href="index.html"><img style="width: 50px; height: 50px; margin: 0;" src="assets/img/favicon.png"></a>
 	</header>
+	<div class="scrollup" style="transition: 0.3s ease;">
+		<img class="scrolimg" src="assets/img/scrollup.png">
+	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="pos_nav" style="background-color: ">
-	  
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -28,7 +28,7 @@
 	      <li class="nav-item active">
 	        <a class="nav-link" href="#">Գլխավոր <span class="sr-only">(current)</span></a>
 	      </li>
-	     
+		
 	      <li class="nav-item dropdown">
 	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	          Կատեգորիաներ
@@ -61,22 +61,18 @@
     <li></li>
     <li></li>
   </ul>
-  <ol>
-    <!-- point -->
+<!--   <ol>
     <li class="active"><i class="fa fa-circle-o"></i></li>
     <li><i class="fa fa-circle-o"></i></li>
     <li><i class="fa fa-circle-o"></i></li>
     <li><i class="fa fa-circle-o"></i></li>
     <li><i class="fa fa-circle-o"></i></li>
-    <!-- playpause -->
-    <i class="fa playpause fa-pause-circle-o" title="pause"></i>
-  </ol>
-  <!-- controll -->
+  </ol> -->
   <span class="controll active"></span>
   <span class="controll"></span>
 </div>
 
-	<!-- <section class="container" id="main_section">
+	<section class="container" id="main_section">
 		<hr>
 		<ul class="list-group">
 		  <li class="list-group-item" category='anime'>Նարուտո
@@ -96,7 +92,7 @@
 		</ul>
 		<hr>
 
-	</section> -->
+	</section>
 	<script type="text/javascript" src="assets/js/slider.js"></script>
 	<script type="text/javascript" src="assets/js/js.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>

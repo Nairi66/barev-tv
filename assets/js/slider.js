@@ -85,17 +85,17 @@ $(function() {
         if (stop === false) {autoRunSlider();}
     });
     // play pause click
-    playpause.on("click", function() {
-        $(this).toggleClass("fa-play-circle-o fa-pause-circle-o");
-        if (playpause.hasClass("fa-play-circle-o")) {
-            stop = true;
-            clearInterval(autoRun);
-            $(this).attr('title', 'play');
-        }
-        if (playpause.hasClass("fa-pause-circle-o")) {
-            stop = false;
-            autoRunSlider();
-            $(this).attr('title', 'pause');
-        }
-    });
+    // playpause.on("click", function() {
+    //     $(this).toggleClass("fa-play-circle-o fa-pause-circle-o");
+    //     if (playpause.hasClass("fa-play-circle-o")) {
+    //         stop = true;
+    //         clearInterval(autoRun);
+    //         $(this).attr('title', 'play');
+    //     }
+    //     if (playpause.hasClass("fa-pause-circle-o")) {
+    //         stop = false;
+    //         autoRunSlider();
+    //         $(this).attr('title', 'pause');
+    //     }
+    // });
 });

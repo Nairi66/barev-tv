@@ -38,6 +38,7 @@ if (!isset($_SESSION['username'])) {
 		<div class="form-group col-sm-7" id="last">
 		    <input type="submit" name="login" id="sub" class="col-sm-4 btn btn-success" value="Submit"></input>
 		</div>
+
 		<script type="text/javascript">
 		// $("#sub").prop('disabled', true);
 		// $inpShow = setTimeout(function (){
@@ -67,5 +68,7 @@ if (!isset($_SESSION['username'])) {
 		   }
 		// },1000)
 	</script>
+		<?php include_once '../assets/footer.php' ?>
+
 </body>
 </html>

@@ -90,5 +90,7 @@
 		   }
 		// },1000)
 	</script>
+	<?php include_once '../assets/footer.php' ?>
+	
 </body>
 </html>

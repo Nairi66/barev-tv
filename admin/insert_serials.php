@@ -48,7 +48,7 @@
 				$dest = 'uploaded_serials/'.$name;
 				if (checkFilms($title)) {
 					insertFilm($title, $desc, $name);
-			 		move_uploaded_file($tmp_name, $dest);
+					move_uploaded_file($tmp_name, $dest);
 					return true;
 				}else{
 					// alert('Տվյալ ֆիլմը արդեն կա բազայում։', 'danger');		

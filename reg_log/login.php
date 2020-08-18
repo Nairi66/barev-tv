@@ -5,7 +5,7 @@
 if (!isset($_SESSION['username'])) {
 		// header('location: login.php');
 	}else{ 
-		header('location: /');
+		header('location: /barevtv');
 	}
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ if (!isset($_SESSION['username'])) {
 		<form method="post">
 		  <div class="form-group col-sm-7">
 		    <label for="username">Username*</label>
-		    <input type="text" placeholder="Մուտքանուն" name="log_user" maxlength="8" class="form-control" id="username">
+		    <input type="text" placeholder="Մուտքանուն" name="log_user" class="form-control" id="username">
 		  </div>
 		  <div class="form-group first col-sm-7" style="display: none;">
 		    <label for="pswd1">Password*</label>
@@ -38,12 +38,13 @@ if (!isset($_SESSION['username'])) {
 		<div class="form-group col-sm-7" id="last">
 		    <input type="submit" name="login" id="sub" class="col-sm-4 btn btn-success" value="Submit"></input>
 		</div>
+	</form>
 
 		<script type="text/javascript">
 		// $("#sub").prop('disabled', true);
 		// $inpShow = setTimeout(function (){
 			$('input').on('input', function(){
-		   		if ($('#username').val().length > 7) {
+		   		if ($('#username').val().length > 0) {
 					$(".first").show(500);
 					if ($('#pswd1').val().length > 7) {
 						$(".second").show(500);
@@ -68,7 +69,5 @@ if (!isset($_SESSION['username'])) {
 		   }
 		// },1000)
 	</script>
-		<?php include_once '../assets/footer.php' ?>
-
 </body>
 </html>

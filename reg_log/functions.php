@@ -74,7 +74,7 @@
 					if (mysqli_num_rows($result)>=1) {
 						$_SESSION['username'] = $log_user;
 
-						header('location: /barev.php');
+						header('location: /barevtv');
 						// echo "verjy mtar eli typo";
 						// echo $_SESSION['username'];
 						

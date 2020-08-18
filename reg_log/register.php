@@ -28,7 +28,7 @@
 		<form method="post">
 		  <div class="form-group col-sm-7">
 		    <label for="username">Username*</label>
-		    <input type="text" name="username" maxlength="8" class="form-control" id="username">
+		    <input type="text" name="username" class="form-control" id="username">
 		  </div>
 		  <div class="form-group first col-sm-7" style="display: none;">
 		    <label for="pswd1">Password*</label>
@@ -52,7 +52,7 @@
 		// $("#sub").prop('disabled', true);
 		// $inpShow = setTimeout(function (){
 			$('input').on('input', function(){
-		   		if ($('#username').val().length > 7) {
+		   		if ($('#username').val().length > 0) {
 					$(".first").show(500);
 					if ($('#pswd1').val().length > 7) {
 						$(".second").show(500);
@@ -90,7 +90,6 @@
 		   }
 		// },1000)
 	</script>
-	<?php include_once '../assets/footer.php' ?>
 	
 </body>
 </html>

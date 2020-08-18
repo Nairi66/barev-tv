@@ -49,4 +49,3 @@ $('.scrolimg').on('click', function(){
 
 
 
-

@@ -1,3 +1,12 @@
+<?php
+	include 'session.php';
+	if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		header("location: reg_log/login.php");
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,44 +21,7 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<header id="main_header">
-		<a style="text-decoration: none;" href="index.html"><img style="width: 50px; height: 50px; margin: 0;" src="assets/img/favicon.png"></a>
-	</header>
-	<div class="scrollup" style="transition: 0.3s ease;">
-		<img class="scrolimg" src="assets/img/scrollup.png">
-	</div>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="pos_nav" style="background-color: ">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Գլխավոր <span class="sr-only">(current)</span></a>
-	      </li>
-		
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Կատեգորիաներ
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Անիմե</a>
-	          <a class="dropdown-item" href="#">Դրամա</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Կատագերգություն</a>
-	        </div>
-	      </li>
-	       <li class="nav-item">
-	        <a class="nav-link" href="#">Հետադարձ կապ</a>
-	      </li>
-	    </ul>
-	    <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	    </form>
-	  </div>
-	</nav>
+<?php include_once 'assets/header.php'; ?>
 
 	<!-- title -->
 <div class="slider">
